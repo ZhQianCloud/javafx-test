@@ -8,13 +8,10 @@ public class JF02_PlatForm extends Application {
         System.out.println("start线程名称->"+ Thread.currentThread().getName());
         stage.setTitle("paltform的使用");
 //        stage.show();
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                //与start都是JavaFX Application Thread,即runlater不是真的线程, 是个队列
-                System.out.println("runLater线程名称->"+Thread.currentThread().getName());
-                System.out.println("runLater");
-            }
+        Platform.runLater(() -> {
+            //与start都是JavaFX Application Thread,即runlater不是真的线程, 是个队列
+            System.out.println("runLater线程名称->"+Thread.currentThread().getName());
+            System.out.println("runLater");
         });
 
         Thread.sleep(3000);
