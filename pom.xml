@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>javafx-test</artifactId>
-    <version>1.0</version>
+    <version>1.2</version>
     <name>javafxTest</name>
 
     <dependencies>
@@ -20,16 +20,10 @@
             <artifactId>javafx-fxml</artifactId>
             <version>18.0.1</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.kordamp.bootstrapfx</groupId>
-            <artifactId>bootstrapfx-core</artifactId>
-            <version>0.4.0</version>
-        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
-            <version>11.0.2</version>
+            <version>18.0.1</version>
         </dependency>
 
         <dependency>
@@ -37,6 +31,7 @@
             <artifactId>bootstrapfx-core</artifactId>
             <version>0.4.0</version>
         </dependency>
+
     </dependencies>
 
     <properties>
