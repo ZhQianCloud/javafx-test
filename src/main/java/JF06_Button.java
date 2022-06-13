@@ -5,10 +5,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.input.*;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
@@ -112,6 +109,16 @@ public class JF06_Button extends Application {
                 System.out.println("setOnKeyReleased = " + keyEvent.getCode().getName());
             }
         });
+
+        //快捷键
+        KeyCombination kcb1 = new KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN);
+        scene.getAccelerators().put(kcb1, new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("执行了快捷键方法");
+            }
+        });
+
 
         stage.show();
     }
