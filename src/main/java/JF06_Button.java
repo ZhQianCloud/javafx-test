@@ -76,7 +76,7 @@ public class JF06_Button extends Application {
             }
         });
 
-        //双击时间
+        //双击事件
         button2.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
